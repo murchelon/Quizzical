@@ -184,7 +184,7 @@ function Quizzical()
 
     async function getQuestionsFromAPI() 
     {
-        const res = await fetch("https://opentdb.com/api.php?amount=10&type=multiple&encode=url3986");
+        const res = await fetch("https://opentdb.com/api.php?amount=5&type=multiple&encode=url3986");
 
         if (!res.ok) {
             const message = 'An error has occured: ' + res.status;
